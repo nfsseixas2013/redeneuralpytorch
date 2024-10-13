@@ -1,0 +1,14 @@
+{
+    "Action": 0,
+    "Fighting": 1,
+    "Sports": 2,
+    "Adventure": 3,
+    "Puzzle": 4,
+    "Misc": 5,
+    "Simulation": 6,
+    "Platform": 7,
+    "Strategy": 8,
+    "Racing": 9,
+    "Shooter": 10,
+    "Role-Playing": 11
+}
