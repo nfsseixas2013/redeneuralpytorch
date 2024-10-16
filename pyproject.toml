@@ -14,6 +14,9 @@ notebook = "6.0.0"
 dvc = "3.12.0"
 cvxpy = "1.5.2"
 fancyimpute = "^0.7.0"
+stable-baselines3 = "^2.3.2"
+gym = "^0.26.2"
+shimmy = "0.2.1"
 
 
 [build-system]
