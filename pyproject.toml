@@ -17,6 +17,8 @@ fancyimpute = "^0.7.0"
 stable-baselines3 = "^2.3.2"
 gym = "^0.26.2"
 shimmy = "0.2.1"
+imbalanced-learn = "^0.12.4"
+seaborn = "0.11.2"
 
 
 [build-system]
