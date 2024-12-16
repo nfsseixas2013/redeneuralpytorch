@@ -92,13 +92,13 @@ Hour,Weekday/Weekend,Presence Detector,Face Recognition,Weapon Recognition,Actio
 15:00,Weekday,0,0,0,0
 15:10,Weekday,0,0,0,0
 15:20,Weekday,0,0,0,0
-15:30,Weekday,1,2,0,0  # Kids return home
+15:30,Weekday,1,2,0,0
 15:40,Weekday,1,2,0,0
 15:50,Weekday,1,2,0,0
 16:00,Weekday,1,2,0,0
 16:10,Weekday,1,2,0,0
 16:20,Weekday,1,2,0,0
-16:30,Weekday,1,4,0,0  # Parents return home
+16:30,Weekday,1,4,0,0
 16:40,Weekday,1,4,0,0
 16:50,Weekday,1,4,0,0
 17:00,Weekday,1,4,0,0
@@ -138,7 +138,7 @@ Hour,Weekday/Weekend,Presence Detector,Face Recognition,Weapon Recognition,Actio
 22:40,Weekday,1,4,0,0
 22:50,Weekday,1,4,0,0
 23:00,Weekday,1,4,0,0
-23:10,Weekday,0,0,0,0  # Family goes to bed
+23:10,Weekday,0,0,0,0
 23:20,Weekday,0,0,0,0
 23:30,Weekday,0,0,0,0
 23:40,Weekday,0,0,0,0
