@@ -49,7 +49,6 @@ class RealTimeEnvironment(gym.Env):
 
     def step_N(self, action):
         correct_action = self.actions_data_N[self.index][self.current_step]
-        print(f"Action: {action} --- Gabarito: {correct_action}")
         self.correct.append(correct_action)
         #reward = 1 if action == correct_action else -1
         if action == correct_action:

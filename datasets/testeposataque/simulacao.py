@@ -74,8 +74,8 @@ state = discretize_state(state)
 done = False
 env.index = 0
 # Metrics for tracking performance
-reward_history = deque(maxlen=144)
-action_accuracy = deque(maxlen=144)
+reward_history = deque(maxlen=2016)
+action_accuracy = deque(maxlen=2016)
 
 
 poison = False
@@ -85,7 +85,7 @@ epsilon = []
 index = 0
 episode = 0
 episode_reward = 0
-while not done:
+while True:
     # Escolher a melhor ação (exploração)
     action = np.argmax(q_table[tuple(state)])
     
@@ -93,7 +93,7 @@ while not done:
     next_state, reward, done, _ = env.step_N(action)  # Use step_P para outro cenário
     next_state = discretize_state(next_state)
 
-    print(f"Estado: {state}, Ação: {action}, Recompensa: {reward}")
+    #print(f"Estado: {state}, Ação: {action}, Recompensa: {reward}")
     state = next_state
     episode_reward += reward
     #action_accuracy.append(1 if reward == 1 else 0)  # Track if action was correct
