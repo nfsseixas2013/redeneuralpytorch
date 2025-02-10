@@ -1,4 +1,4 @@
-setwd("/home/nilton/redeneuralpytorch/datasets/")
+setwd("/home/nilton/redeneuralpytorch/datasets/plots/")
 library(ggplot2)
 library(data.table)
 
@@ -10,9 +10,12 @@ p = ggplot(training_avg, aes(x = episodes, y = avg_reward, color = mode, group =
     x = "Episodes",
     y = "Avg Reward",
     color = ""
-  )
+  ) +  theme_minimal() + 
+  theme(legend.position = c(0.9, 0.2), legend.background = element_rect(fill="white", color="black"),
+        text = element_text(size = 16, family = "Times New Roman"))
 
-png("training_avg.png", units="in", width=8, height=5, res=300)
+p
+png("training_avg.png", units="in", width=10, height=5, res=300)
 p
 dev.off()
 
@@ -24,8 +27,10 @@ p = ggplot(success_avg_training, aes(x = episodes, y = `Success rate`, color = m
     x = "Episodes",
     y = "Avg Success",
     color = ""
-  )
-png("training_succ.png", units="in", width=8, height=5, res=300)
+  ) +   theme_minimal() + theme(legend.position = c(0.9, 0.2), legend.background = element_rect(fill="white", color="black"),
+                                text = element_text(size = 16, family = "Times New Roman"))
+
+png("training_succ.png", units="in", width=10, height=5, res=300)
 p
 dev.off()
 
@@ -37,9 +42,10 @@ p = ggplot(inference_avg_test, aes(x = episodes, y = avg_reward, color = mode, g
     x = "Episodes",
     y = "Avg Reward",
     color = ""
-  )
+  ) +  theme_minimal() +theme(legend.position = c(0.9, 0.2), legend.background = element_rect(fill="white", color="black"),
+                              text = element_text(size = 16, family = "Times New Roman"))
 p
-png("avg_reward_test.png", units="in", width=8, height=5, res=300)
+png("avg_reward_test.png", units="in", width=10, height=5, res=300)
 p
 dev.off()
 
@@ -51,10 +57,11 @@ p = ggplot(inference_avg_training, aes(x = episodes, y = avg_reward, color = mod
     x = "Episodes",
     y = "Avg Reward",
     color = ""
-  )
+  ) +  theme_minimal() + theme(legend.position = c(0.9, 0.2), legend.background = element_rect(fill="white", color="black"),
+                               text = element_text(size = 16, family = "Times New Roman"))
 p
 
-png("avg_reward_training_data.png", units="in", width=8, height=5, res=300)
+png("avg_reward_training_data.png", units="in", width=10, height=5, res=300)
 p
 dev.off()
 
@@ -66,8 +73,10 @@ p = ggplot(success_teste, aes(x = episodes, y = `Success rate`, color = mode, gr
     x = "Episodes",
     y = "Avg Success",
     color = ""
-  )
+  ) +  theme_minimal() + theme(legend.position = c(0.9, 0.2), legend.background = element_rect(fill="white", color="black"),
+                               text = element_text(size = 16, family = "Times New Roman"))
 p
-png("avg_success_teste.png", units="in", width=8, height=5, res=300)
+png("avg_success_teste.png", units="in", width=10, height=5, res=300)
 p
 dev.off()
+
